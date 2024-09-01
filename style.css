@@ -19,3 +19,8 @@ button {
     display: flex;
     gap: 20px;
 }
+
+.actions-container {
+    border-left: 2px solid;
+    padding: 10px;
+}
