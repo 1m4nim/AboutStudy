@@ -4,23 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AboutStudy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p>いつ実行するか選択</p>
-    <input type="date" id="dateInput">
-    <input type="time" id="timeInput">
+    <div class="header-container">
+        <h1>AboutStudy</h1>
+        <div id="timer">00:00:00</div> <!-- カウントアップタイマーの表示 -->
+        <button type="button" id="startBtn">スタート</button> <!-- スタートボタンを追加 -->
+        <button type="button" id="stopBtn">休憩</button>
+    </div>
 
-    <p>何をやるかを入力する</p>
-    <input type="text" id="cont">
-    <button type="button" id="btn">送信</button>
+    <div class="flex-container">
+        <!-- 日付と時間の入力フィールド -->
+        <div class="flex-item">
+            <p>日付を選択する</p>
+            <input type="date" id="dateInput">
 
-    <ul id="contentList"></ul>
+            <p>何をやるかを入力する</p>
+            <input type="text" id="cont" placeholder="やること">
+            <button type="button" id="btn">送信</button>
+            <ul id="contentList"></ul>
 
-    <button type="button" id="sortBtn">順番に並べ替える</button>
+            <button type="button" id="sortBtn">日付順に並べ替え</button>
+        </div>
+
+        <!-- やったことの入力フィールド -->
+        <div class="flex-item actions-container">
+            <p>日付を選択する</p>
+            <input type="date" id="dateInput2">
+
+            <p>何時間　何分</p>
+            <input type="number" id="hoursInput" placeholder="時間" min="0" step="1">
+            <input type="number" id="minutesInput" placeholder="分" min="0" step="1">
+
+            <p>やったことの入力:</p>
+            <input type="text" id="completedAction" placeholder="やったこと">
+            <button type="button" id="btn2">送信</button>
+
+            <ul id="completedContentList"></ul>
+
+            <button type="button" id="sortBtn2">日付順に並べ替え</button>
+        </div>
+    </div>
 
     <script src="Date.js" defer></script>
+    <script src="timer.js" defer></script> <!-- カウントアップタイマーのJavaScriptを追加 -->
 </body>
 
 </html>

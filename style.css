@@ -1,0 +1,21 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* タイトルとタイマーの間にスペースを作成 */
+}
+
+#timer {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    margin-left: 10px;
+    /* ボタン間のスペースを作成 */
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
