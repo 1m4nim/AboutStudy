@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    /* タイトルとタイマーの間にスペースを作成 */
 }
 
 #timer {
@@ -12,15 +11,25 @@
 
 button {
     margin-left: 10px;
-    /* ボタン間のスペースを作成 */
 }
 
-.flex-container {
+.todo {
     display: flex;
-    gap: 20px;
+}
+
+.select {
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.done {
+    display: flex;
+}
+
+.submit {
+    display: flex;
 }
 
 .actions-container {
-    border-left: 2px solid;
-    padding: 10px;
+    border-top: 5px dotted;
 }
