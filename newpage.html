@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Page</title>
-    <script src="newpage.js"></script>
-</head>
+    <title>新しいページ</title>
+    <link rel="stylesheet" href="./css/newpage.css">
 
 <body>
-    <div class="section">
-        <h2>やること</h2>
-        <!-- 入力内容がここに表示される -->
-        <div id="todoContent"></div>
-    </div>
 
-    <div class="section">
+    <div class="content-section">
+        <h2>やりたいこと</h2>
+        <button id="sortBtn">日付順にソート</button>
+        <ul id="todoContent"></ul>
+    </div>
+    <button id="clearAllBtn">すべて削除</button>
+
+    <div class="content-section">
         <h2>やったこと</h2>
-        <!-- 入力内容がここに表示される -->
-        <div id="completedContent"></div>
+        <button id="sortCompletedBtn">日付順にソート</button>
+        <ul id="completedContent"></ul>
     </div>
 
+    <button id="clearAllBtn">すべて削除</button>
+
+    <script src="newpage.js"></script>
 </body>
 
 </html>

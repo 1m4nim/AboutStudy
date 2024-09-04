@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutStudy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -35,44 +35,43 @@
                     <input type="text" id="cont" placeholder="やること">
                 </div>
             </div>
-            <div class="submit">
-                <button type="button" id="btn">送信</button>
-                <ul id="contentList"></ul>
+            <form id="post">
+                <div class="submit">
+                    <button type="button" id="btn">送信</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-
+    <!-- やったことの入力フィールド -->
+    <div class="flex-item actions-container">
+        <h2>やったこと</h2>
+        <div class="done">
+            <div class="select">
+                <p>日付を選択する</p>
+                <input type="date" id="dateInput2">
+            </div>
+            <div class="select">
+                <p>実際の時間</p>
+                <input type="number" id="hoursInput" placeholder="時間" min="0" step="1">
+                <input type="number" id="minutesInput" placeholder="分" min="0" step="1">
+            </div>
+            <div class="select">
+                <p>やったことの入力:</p>
+                <input type="text" id="completedAction" placeholder="やったこと">
             </div>
         </div>
-
-        <!-- やったことの入力フィールド -->
-        <div class="flex-item actions-container">
-            <h2>やったこと</h2>
-            <div class="done">
-                <div class="select">
-                    <p>日付を選択する</p>
-                    <input type="date" id="dateInput2">
-                </div>
-                <div class="select">
-                    <p>実際の時間</p>
-                    <input type="number" id="hoursInput" placeholder="時間" min="0" step="1">
-                    <input type="number" id="minutesInput" placeholder="分" min="0" step="1">
-                </div>
-                <div class="select">
-                    <p>やったことの入力:</p>
-                    <input type=" text" id="completedAction" placeholder="やったこと">
-                </div>
-            </div>
+        <form id="submittion">
             <div class="submit">
                 <button type="button" id="btn2">送信</button>
-
-                <ul id="completedContentList"></ul>
-
             </div>
-        </div>
+        </form>
+    </div>
 
-        <script src="Date.js" defer></script>
-        <script src="timer.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/chart.min.js"></script>
-        <script src="newpage.js"></script>
+    <script src="Date.js" defer></script>
+    <script src="timer.js" defer></script>
+    <script src="newpage.js" defer></script>
+
 </body>
 
 </html>
