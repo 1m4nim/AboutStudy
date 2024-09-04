@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             minutesInput.value = '';
         }
     }
+
     document.addEventListener('DOMContentLoaded', () => {
         const btn = document.getElementById('btn');
         const btn2 = document.getElementById('btn2');
@@ -65,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const completedAction = document.getElementById('completedAction');
         const dateInput2 = document.getElementById('dateInput2');
         const hoursInput = document.getElementById('hoursInput');
-        const minutesInput = document.getElementById('minutesInput');
+        const minutesInput = document.getElementById('minutesInput'); //この長いやつを消すとなんか知らんけど送信できなくなる
 
         function redirectToNewPage() {
             window.location.href = 'newpage.html';
