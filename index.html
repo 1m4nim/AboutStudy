@@ -16,64 +16,64 @@
         <button type="button" id="stopBtn">休憩</button>
     </div>
 
-    <form action="/newpage.html" method="post">
+    <!-- <form action="/newpage.html" method="post"> -->
 
-        <div class="flex-container">
-            <!-- 日付と時間の入力フィールド -->
-            <div class="flex-item">
-                <h2>やること</h2>
-                <div class="todo">
-                    <div class="select">
-                        <p>日付を選択する</p>
-                        <input type="date" id="dateInput">
-                    </div>
-                    <div class="select">
-                        <p>予想時間</p>
-                        <input type="number" id="predictionHours" placeholder="時間" min="0" step="1">
-                        <input type="number" id="predictionMin" placeholder="分">
-                    </div>
-                    <div class="select">
-                        <p>何をやるか入力</p>
-                        <input type="text" id="cont" placeholder="やること">
-                    </div>
-                </div>
-                <form id="post">
-                    <div class="submit">
-                        <button type="button" id="btn">送信</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </form>
-
-    <!-- やったことの入力フィールド -->
-    <form action="newpage.html" method="post">
-        <div class="flex-item actions-container">
-            <h2>やったこと</h2>
-            <div class="done">
+    <div class="flex-container">
+        <!-- 日付と時間の入力フィールド -->
+        <div class="flex-item">
+            <h2>やること</h2>
+            <div class="todo">
                 <div class="select">
                     <p>日付を選択する</p>
-                    <input type="date" id="dateInput2">
+                    <input type="date" id="dateInput">
                 </div>
                 <div class="select">
-                    <p>実際の時間</p>
-                    <input type="number" id="hoursInput" placeholder="時間" min="0" step="1">
-                    <input type="number" id="minutesInput" placeholder="分" min="0" step="1">
+                    <p>予想時間</p>
+                    <input type="number" id="predictionHours" placeholder="時間" min="0" step="1">
+                    <input type="number" id="predictionMin" placeholder="分">
                 </div>
                 <div class="select">
-                    <p>やったことの入力:</p>
-                    <input type="text" id="completedAction" placeholder="やったこと">
+                    <p>何をやるか入力</p>
+                    <input type="text" id="cont" placeholder="やること">
                 </div>
             </div>
-            <form id="submittion">
+            <form id="post">
                 <div class="submit">
-                    <button type="button" id="btn2">送信</button>
+                    <button type="button" id="btn">送信</button>
                 </div>
             </form>
         </div>
+    </div>
     </form>
 
-    <script src="Date.js" defer></script>
+    <!-- やったことの入力フィールド -->
+    <!-- <form action="newpage.html" method="post"> -->
+    <div class="flex-item actions-container">
+        <h2>やったこと</h2>
+        <div class="done">
+            <div class="select">
+                <p>日付を選択する</p>
+                <input type="date" id="dateInput2">
+            </div>
+            <div class="select">
+                <p>実際の時間</p>
+                <input type="number" id="hoursInput" placeholder="時間" min="0" step="1">
+                <input type="number" id="minutesInput" placeholder="分" min="0" step="1">
+            </div>
+            <div class="select">
+                <p>やったことの入力:</p>
+                <input type="text" id="completedAction" placeholder="やったこと">
+            </div>
+        </div>
+        <form id="submittion">
+            <div class="submit">
+                <button type="button" id="btn2">送信</button>
+            </div>
+        </form>
+    </div>
+    </form>
+
+    <script src="script.js" defer></script>
     <script src="timer.js" defer></script>
     <script src="newpage.js" defer></script>
 
